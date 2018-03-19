@@ -100,5 +100,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "homepage" : "http://marklain.github.io/itrex/build/"
 }
