@@ -17,6 +17,7 @@ const GradeCard = ({ activeGrade, allGrades, onDeleteStudent, onAddStudent, onCh
     const onChangeNameFormSubmit = evt => {
         evt.preventDefault();
         onChangeGradeName(gradeNameRef.value);
+        gradeNameRef.value = '';
     }
     return (
     <div className="grade-card">
