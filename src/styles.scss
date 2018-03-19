@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f2ebe3;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.header {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #424242;
+
+    &__logo {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__gpa-info {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__gpa {
+        font-size: 30px;
+    }
+}
+
+.grade-navigation {
+    padding-top: 20px;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    &__list {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 10px;
+        list-style: none;
+        border-bottom: 1px solid #424242;
+    }
+
+    &__grade {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    &__link {
+        display: block;
+        padding: 10px 40px 10px 15px;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid transparent;
+
+        &-active {
+            color: #424242;
+            border-color: #424242;
+            border-bottom: none;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+        }
+    }
+
+    &__btn {
+        padding: 3px 7px;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+        background-color: transparent;
+        font-size: 15px;
+
+        &-delete {
+            border: none;
+        }
+    }
+}
+.change-name-form {
+    padding: 30px 10px 30px 10px;
+    font-size: 15px;
+    &__input {
+        padding: 10px;
+        margin-left: 15px;
+        background-color: transparent;
+        outline: none;
+        box-shadow: 0px 0px 3px #ccc;
+        border-radius: 3px;
+        border: none;
+        font-size: 15px;
+    }
+    &__btn {
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 11px;
+        border: none;
+        border-radius: 3px;
+        background-color: transparent;
+        box-shadow: 0px 0px 3px #ccc;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    &__title {
+        border-bottom: 1px solid #424242;
+        th {
+            text-align: left;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+    }
+    &__row {
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:last-child {
+                position: relative;
+                width: 50px;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 15px;
+                border: none;
+                background-color: transparent;
+                padding: 15px;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+.add-student-form {
+    padding-top: 40px;
+    &__name, &__gpa {
+        width: 20%;
+        padding: 10px;
+        background-color: transparent;
+        outline: none;
+        box-shadow: 0px 0px 3px #ccc;
+        border-radius: 3px;
+        border: none;
+        font-size: 15px;
+    }
+    &__gpa {
+        width: 5%;
+        margin-left: 630px;
+        margin-right: 170px;
+    }
+    button {
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 11px;
+        border: none;
+        border-radius: 3px;
+        background-color: transparent;
+        box-shadow: 0px 0px 3px #ccc;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
