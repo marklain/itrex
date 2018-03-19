@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const NavListItem = ({ name, id, allGrades, setActiveGrade, onDeleteGrade }) => {
     return (
     <li className="grade-navigation__grade">
-        <NavLink onClick={() => {setActiveGrade(id, allGrades)}} activeClassName="grade-navigation__link-active" className="grade-navigation__link" to={`itrex/build/grades/${name}`}>GRADE {name}</NavLink>
+        <NavLink onClick={() => {setActiveGrade(id, allGrades)}} activeClassName="grade-navigation__link-active" className="grade-navigation__link" to={`/itrex/build/grades/${name}`}>GRADE {name}</NavLink>
         <button onClick={() => {onDeleteGrade(id, allGrades)}} className="grade-navigation__btn grade-navigation__btn-delete">x</button>
     </li>
 )};
